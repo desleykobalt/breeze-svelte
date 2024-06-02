@@ -3,6 +3,7 @@
 namespace Laravel\Breeze\Console;
 
 use RuntimeException;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
 use function Laravel\Prompts\select;
@@ -11,8 +12,8 @@ use function Laravel\Prompts\confirm;
 use Illuminate\Filesystem\Filesystem;
 use Symfony\Component\Process\Process;
 use function Laravel\Prompts\multiselect;
-use Symfony\Component\Process\PhpExecutableFinder;
 
+use Symfony\Component\Process\PhpExecutableFinder;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
