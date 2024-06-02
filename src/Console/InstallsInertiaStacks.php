@@ -200,13 +200,13 @@ trait InstallsInertiaStacks
         // NPM Packages...
         $this->updateNodePackages(function ($packages) {
             return [
-                '@inertiajs/svelte' => '^1.0.0',
+                '@inertiajs/svelte' => '^1.1.0',
                 '@tailwindcss/forms' => '^0.5.3',
-                '@sveltejs/vite-plugin-svelte' => '^2.0.2',
+                '@sveltejs/vite-plugin-svelte' => '^3.0.0',
                 'autoprefixer' => '^10.4.12',
                 'postcss' => '^8.4.18',
                 'tailwindcss' => '^3.2.1',
-                'svelte' => '^3.55.1',
+                'svelte' => '^4.2.0',
             ] + $packages;
         });
 
