@@ -21,6 +21,15 @@ trait InstallsInertiaStacks
 
         // NPM Packages...
         $this->updateNodePackages(function ($packages) {
+            dd([
+                '@inertiajs/vue3' => '^1.0.0',
+                '@tailwindcss/forms' => '^0.5.3',
+                '@vitejs/plugin-vue' => '^4.0.0',
+                'autoprefixer' => '^10.4.12',
+                'postcss' => '^8.4.18',
+                'tailwindcss' => '^3.2.1',
+                'vue' => '^3.2.41',
+            ] + $packages);
             return [
                 '@inertiajs/vue3' => '^1.0.0',
                 '@tailwindcss/forms' => '^0.5.3',
@@ -31,7 +40,6 @@ trait InstallsInertiaStacks
                 'vue' => '^3.2.41',
             ] + $packages;
         });
-
         if ($this->option('typescript')) {
             $this->updateNodePackages(function ($packages) {
                 return [
